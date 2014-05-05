@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/motion-installr.svg)](http://badge.fury.io/rb/motion-installr)
+
 # motion-installr
 
 Just like motion-testflight and motion-hockeyapp, motion-installr is a gem to make it easy to configure your application for ad-hoc distribution, but unlike the overly complicated TestFlight and HockeyApp, everything is super easy with Installr. Also I'm not being paid to run this, I just really like Installr.
