@@ -1,4 +1,4 @@
-# Motion::Installr
+# motion-installr
 
 Just like motion-testflight and motion-hockeyapp, motion-installr is a gem to make it easy to configure your application for ad-hoc distribution, but unlike the overly complicated TestFlight and HockeyApp, everything is super easy with Installr. Also I'm not being paid to run this, I just really like Installr.
 
@@ -35,7 +35,7 @@ Inside of your setup block in your Rakefile, configure the following.
 ```ruby
 Motion::Project::App.setup do |app|
   # ...
-  app.development do
+  app.installrapp do
     app.codesign_certificate = 'iPhone Distribution: Jane Doe (S0M3T3AM1D)'
     app.provisioning_profile = '/path/to/your/provisioning/profile.mobileprovision'
     app.entitlements['get-task-allow'] = false
