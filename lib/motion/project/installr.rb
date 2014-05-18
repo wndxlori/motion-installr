@@ -28,7 +28,7 @@ namespace 'installr' do
 
     curl = "curl https://www.installrapp.com/apps.json -H \"X-InstallrAppToken: #{App.config.installr_api_token}\" -F qqfile=@\"#{App.config.archive}\" -F releaseNotes=\"#{release_notes}\" -F notify=true"
 
-    App.info 'Run', curl
+    App.info 'Run', curl.gsub(App.config.installr_api_token, '*********')
     sh curl
   end
 end
